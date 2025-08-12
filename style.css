@@ -95,3 +95,45 @@ input {
     color: white;
     flex: 1;
 }
+
+/* Buttons within .searchButtonsContainer class */
+.searchButtonsContainer {
+    display: flex;
+    align-items: center;;
+    gap: 14px;
+}
+
+.searchButtonsContainer button {
+    padding: 10px  14px;
+    border-radius: 6px;
+    background-color: #334155;
+    border: 1px solid transparent;
+    color: #e8e8e8;
+    cursor: pointer;
+}
+
+.searchButtonsContainer button:hover {
+    border: 1px solid darkgray;
+}
+
+.languageSelection {
+    font-size: .8em;
+}
+
+.languageSelection span {
+    color: rgb(151, 203, 245);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+Selects sections that are DIRECT descendants of footer.
+
+Removing ">" selects all sections within footer
+*/
+footer > section {
+
+}
