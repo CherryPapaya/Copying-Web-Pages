@@ -21,8 +21,11 @@ header {
     */
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-section {
-    height: 200px;
+nav, section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
