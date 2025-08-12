@@ -1,3 +1,5 @@
+/* Positioning and layout styles only affect direct child elements whereas inheritable styles like color, font, etc. affect all descendants but can be overwritten */
+
 /* * Selects all HTML elements on the page */
 * {
     margin: 0;
@@ -12,6 +14,9 @@ body {
     padding: 14px;
     /* vh = view height */
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
 header {
@@ -28,4 +33,28 @@ nav, section {
     display: flex;
     align-items: center;
     gap: 14px;
+}
+
+.whiteLink {
+    color: white;
+}
+
+.greyLink {
+    color: lightgray;
+}
+
+a {
+    text-decoration: unset;
+}
+a:hover {
+    text-decoration: underline
+}
+
+main {
+    /* Be space-greedy */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
