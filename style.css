@@ -163,6 +163,7 @@ footer > section {
 
 footer > section:last-child {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid darkgray;
@@ -176,4 +177,11 @@ footer > section:last-child {
 
 .footerLink a {
     cursor: pointer;
+}
+
+/* Executes whatever is inside once requirement min-width: 540px is met */
+@media (min-width: 540px) {
+    footer > section:last-child {
+        flex-direction: row;
+    }
 }
