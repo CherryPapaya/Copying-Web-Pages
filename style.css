@@ -20,4 +20,9 @@ header {
         flex = in a row
     */
     display: flex;
+    align-items: center;
+}
+
+section {
+    height: 200px;
 }
