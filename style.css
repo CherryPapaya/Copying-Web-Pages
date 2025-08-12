@@ -1,3 +1,23 @@
-button {
-    color: green;
+/* * Selects all HTML elements on the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f172a;
+    color: white;
+    /* margin: ; */
+    padding: 14px;
+    /* vh = view height */
+    min-height: 100vh;
+}
+
+header {
+    /*
+        How to display the contents
+        flex = in a row
+    */
+    display: flex;
 }
