@@ -46,6 +46,7 @@ nav, section {
 }
 
 a {
+    color: lightgray;
     text-decoration: unset;
     font-size: .8em;
 }
@@ -69,6 +70,7 @@ main {
 .headerText {
     font-size: 4em;
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 .searchBar {
@@ -141,6 +143,18 @@ footer > section {
 }
 
 footer > section:last-child {
-    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border-top: 1px solid darkgray;
+}
+
+.footerLink {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footerLink a {
+    cursor: pointer;
 }
