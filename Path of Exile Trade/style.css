@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(24, 24, 67);
+    color: white;
+}
+
+.account {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}

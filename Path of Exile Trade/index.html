@@ -14,6 +14,7 @@ Requires Login.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Path of Exile Trade</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -21,11 +22,11 @@ Requires Login.
     <!-- Seems header has min height -->
     <header>
         <nav>
-            <div>
-                <p>Logged in as</p>
+            <div class="account">
+                <p>Logged in as </p>
                 <a href="">UserName#0000</a>
             </div>
-            <div>
+            <div class="navigation">
                 <a href="">LOG OUT</a>
                 <a href="">MESSAGES</a>
                 <a href="">CONTACT SUPPORT</a>
@@ -41,8 +42,8 @@ Requires Login.
     </header>
 
     <main>
-        <div>
-            <div>
+        <div class="searchAndSettings">
+            <div class="regOrBulk">
                 <button>
                     <img src="" alt="">
                     <p>SEARCH LISTED ITEMS</p>
@@ -53,7 +54,7 @@ Requires Login.
                 </button>
             </div>
 
-            <div>
+            <div class="settingsAndAbout">
                 <button>
                     <img src="" alt="">
                     <p>SETTINGS</p>
@@ -65,11 +66,11 @@ Requires Login.
             </div>
         </div>
 
-        <div class="SearchOptionsContainer">
-            <div>
+        <div class="searchContainer">
+            <div class="searchBar">
                 <input type="" placeholder="SEARCH ITEMS...">
             </div>
-            <div>
+            <div class="searchOptionsContainer">
                 <select name="Realm" id="Realm">
                     <option value="PoE 1 PC">PoE 1 PC</option>
                     <option value=""></option>
@@ -79,13 +80,14 @@ Requires Login.
                 <select name="League" id="League">
                         <option value="MERCENARIES">MERCENARIES</option>
                 </select>
+
                 <select name="Online Status" id="Online Status">
                     <option value="ONLINE ONLY">ONLINE ONLY</option>
                 </select>
             </div>
         </div>
 
-        <div>
+        <div class="searchClearFilters">
             <div>
                 <button>SEARCH</button>
             </div>
