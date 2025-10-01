@@ -7,6 +7,11 @@ document.getElementById('searchBar')
 });
 
 document.getElementById('googleSearchButton').addEventListener('click', () => {
-  const searchInput = document.getElementById('searchBar').value;
-  console.log(searchInput);
+  visitPage();
 })
+
+function visitPage() {
+  const searchTerm = document.getElementById('searchBar').value.trim();
+  window.location='https://www.google.com/search?q=' + searchTerm;
+}
+
