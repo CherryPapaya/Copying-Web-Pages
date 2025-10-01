@@ -1,5 +1,5 @@
 document.getElementById('searchBar')
-    .addEventListener('keypress', function(event) {
+    .addEventListener('keydown', function(event) {
       if (event.key === 'Enter') {
         event.preventDefault();
         document.getElementById('googleSearchButton').click();
